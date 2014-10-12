@@ -1,5 +1,7 @@
 source('./data.R')
 
+png('./plots/plot4.png', width=480, height=480)
+
 par(bg=NA)
 par(mfrow=c(2,2))
 
@@ -15,5 +17,4 @@ legend('topright', col = c("black", 'red', 'blue'), legend = c('Sub_metering_1',
 
 with(data, plot(datetime, Global_reactive_power, type="l"))
 
-dev.copy(png, './plots/plot4.png')
 dev.off()

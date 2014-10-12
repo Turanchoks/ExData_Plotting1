@@ -1,6 +1,3 @@
-this.dir <- dirname(parent.frame(2)$ofile) 
-setwd(this.dir) 
-
 if( ! file.exists('./data/household_power_consumption.txt') )
     unzip('./data/household_power_consumption.zip', exdir='./data')
 
